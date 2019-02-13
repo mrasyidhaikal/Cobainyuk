@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Cobain Yukk</title>
+<style type="text/css">
+body {
+margin: 0;
+padding: 0;
+}
+textarea {
+font-family: calibri, verdana, ms sans serif;
+font-size: 11pt;
+}
+.maintable {
+width: 100%;
+background-color: #e5eecc;
+color: #000;
+border:solid #c3c3c3 1px;
+margin-left: 0px;
+border-spacing: 9px 3px;
+padding: 3px;
+}
+.code_input, .result_output {
+border: 1px solid #c3c3c3;
+width: 100%;
+height: 400px;
+background-color: #ffffff;
+color: #000;
+}
+
+
+</style>
+</head>
+<body>
+
+	<p class="codepen" data-height="331" data-theme-id="dark" data-default-tab="result" data-user="mrasyidhaikal" data-slug-hash="dwxoxw" style="height: 331px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="dwxoxw">
+  <span>See the Pen <a href="https://codepen.io/mrasyidhaikal/pen/dwxoxw/">
+  dwxoxw</a> by mrasyidhaikal (<a href="https://codepen.io/mrasyidhaikal">@mrasyidhaikal</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<table class="maintable">
+        <tbody>
+<tr>
+            <td align="right"><input name="submit" onclick="display()" type="submit" value="Submit Code &raquo;" />
+                <input name="submit" onclick="open_new()" type="submit" value="Clear" />
+            </td>
+            <td align="left"><div style="color: #617f10; font-family: verdana; font-size: 90%;">Result:</div>
+</td>
+        </tr>
+<tr>
+            <td style="width: 50%;"><textarea class="code_input" cols="42" id="code" rows="21" wrap="logical"><!DOCTYPE html>
+<html>
+	<head>
+		<title>Online HTML Editor</title>
+	</head>
+<body>
+	<b>Try HTML Code here</b>
+</body>
+</html>
+</textarea>
+            </td>
+            <td style="width: 50%;"><iframe class="result_output" frameborder="0" name="view" src="about:Blank"></iframe>
+            </td>
+        </tr>
+<tr>
+            <td><div style="color: #617f10; font-family: verdana; font-size: 90%; margin-top: 7px;">
+ Edit the code above and click "Submit Code" to see the result.</div>
+</td>
+            <td align="right"><div style="color: #617f10; font-family: verdana; font-size: 90%;">
+</div>
+</td>
+        </tr>
+</tbody>
+</table>
+
+<script type="text/javascript">
+function display() {
+var result = window.open('about:Blank','view','');
+var tmp = result.document;
+tmp.write(document.getElementById('code').value);
+tmp.close();
+return false;
+}
+{display()}
+function open_new() {
+document.getElementById('code').value = '';
+display()
+return false;
+}
+</script>
+</body>
+</html>
