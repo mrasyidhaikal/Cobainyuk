@@ -114,18 +114,18 @@ color: #000;
 						<div class="col-md-9">
 							<div class="content-wrap">
 								<article class="animate-box">
-									<div class="blog-img" style="background-image: url(images/blog-1.png);"></div>
+									<div class="blog-img" style="background-image: url(images/blog-4.png);"></div>
 									<div class="desc">
 										<div class="meta">
 											<p>
 												<span>HTML</span>
 												<span>Tutorial</span>
-												<span>Heading </span>
+												<span>Table </span>
 												<span><a href="#">11-02-2019</a></span>
 											</p>
 										</div>
-										<h2><a href="single.html">Heading</a></h2>
-										<p>Heading dalam HTML biasa digunakan untuk memberikan judul dalam sebuah halaman, Tag heading dalam HTML selalu dimulai dengan h1 untuk ukuran terbesar dan h6 untuk ukurang paling kecil. semakin rendah nilai dari suatu heading maka ukuran text nya akan semakin besar. .</p>
+										<h2><a href="single.html">Table</a></h2>
+										<p>Tabel merupakan cara untuk menampilkan informasi dalam bentuk sel yang terdiri atas baris dan kolom. Tabel dibuat dengan menggunakan tag < table >. Sebuah tabel dibagi menjadi baris-baris, dan tiap baris dibagi ke dalam cell-cell. </p>
 										<p>
 	<p class="codepen" data-height="331" data-theme-id="dark" data-default-tab="result" data-user="mrasyidhaikal" data-slug-hash="dwxoxw" style="height: 331px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="dwxoxw">
   <span>See the Pen <a href="https://codepen.io/mrasyidhaikal/pen/dwxoxw/">
@@ -146,11 +146,67 @@ color: #000;
 <tr>
             <td style="width: 50%;"><textarea class="code_input" cols="42" id="code" rows="21" wrap="logical"><!DOCTYPE html>
 <html>
-	<head>
-		<title>Online HTML Editor</title>
-	</head>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
 <body>
-	<b>Try HTML Code here</b>
+
+<h2>HTML Table</h2>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
 </body>
 </html>
 </textarea>
